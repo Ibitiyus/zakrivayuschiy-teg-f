@@ -39,4 +39,6 @@ BASE_URL=http://127.0.0.1:8000/ node tests/accessibility.cjs
 
 Исходный репозиторий: [Ibitiyus/zakrivayuschiy-teg-f](https://github.com/Ibitiyus/zakrivayuschiy-teg-f).
 
-GitHub Pages пока не подтверждён. После отправки проекта в репозиторий и включения Pages фактическая ссылка добавляется в этот раздел. Предполагаемый адрес не считается опубликованным сайтом.
+Сайт: [ibitiyus.github.io/zakrivayuschiy-teg-f](https://ibitiyus.github.io/zakrivayuschiy-teg-f/).
+
+Публикация подтверждена успешным workflow GitHub Pages. Прямой HTTP-запрос к домену github.io из этой облачной среды ограничен сетевым прокси.
