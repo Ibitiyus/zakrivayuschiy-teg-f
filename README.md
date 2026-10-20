@@ -1,1 +1,1 @@
-https://ibitiyus.github.io/zakrivayuschiy-teg-f/
+https://github.com/Ibitiyus/zakrivayuschiy-teg-f.git
