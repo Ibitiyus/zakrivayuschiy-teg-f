@@ -26,6 +26,7 @@ export NODE_PATH=/tmp/closing-tag-tools/node_modules
 node tests/static.cjs
 /tmp/closing-tag-tools/node_modules/.bin/html-validate index.html
 BASE_URL=http://127.0.0.1:8000/ node tests/smoke.cjs
+BASE_URL=http://127.0.0.1:8000/ node tests/accessibility.cjs
 ```
 
 Для `tests/smoke.cjs` нужен Chromium (по умолчанию `/usr/bin/chromium`). `CHROMIUM_PATH` позволяет выбрать другой исполняемый файл, `ARTIFACTS_DIR` — сохранить снимки экрана. `BROWSER=firefox` выбирает Firefox, предварительно установленный через Playwright. Для браузерного теста сервер должен быть запущен в другом терминале.
@@ -33,6 +34,8 @@ BASE_URL=http://127.0.0.1:8000/ node tests/smoke.cjs
 В подготовленной облачной среде Playwright уже доступен по пути `/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules`; этот путь можно добавить в `NODE_PATH` вместо установки дополнительной копии.
 
 ## Публикация
+
+Работа отправлена в ветку `project-work`.
 
 Исходный репозиторий: [Ibitiyus/zakrivayuschiy-teg-f](https://github.com/Ibitiyus/zakrivayuschiy-teg-f).
 

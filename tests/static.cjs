@@ -85,3 +85,12 @@ assert.equal((html.match(/<use\s/g) || []).length, 2);
 console.log(
   "PASS files, CSS syntax/duplicates/variables, transitions, stylesheet order, local assets, fonts, SVG structure, label fallback",
 );
+
+const fontCode = fs.readFileSync(path.join(root, "fonts/fonts.css"), "utf8");
+assert.ok(fontCode.includes("woff2 supports variations"));
+assert.match(fontCode, /font-weight:\s*400 785/);
+assert.match(
+  fs.readFileSync(path.join(root, "styles/variables.css"), "utf8"),
+  /--weight-heading:\s*785/,
+);
+console.log("PASS course-required variation formats and 400–785 weight range");
